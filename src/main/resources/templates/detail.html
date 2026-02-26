@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>CVE Details</title>
+</head>
+<body>
+<h2 th:text="${cve.cveId}"></h2>
+<p><strong>Description:</strong></p>
+<p th:text="${cve.description}"></p>
+<p><strong>CVSS Score:</strong>
+    <span th:text="${cve.cvssScore}"></span>
+</p>
+<p><strong>Published:</strong>
+    <span th:text="${cve.publishedDate}"></span>
+</p>
+<p><strong>Last Modified:</strong>
+    <span th:text="${cve.lastModifiedDate}"></span>
+</p>
+<p><strong>Status:</strong>
+    <span th:text="${cve.status}"></span>
+</p>
+<br>
+<a href="/">Back to List</a>
+</body>
+</html>
